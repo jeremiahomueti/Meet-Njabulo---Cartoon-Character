@@ -1,0 +1,309 @@
+
+.cartoon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vmin;
+    height: 80vmin;
+    background-color: #eee;
+    background-image: linear-gradient(to right, 
+    transparent 99%, gray 0), linear-gradient(to bottom,
+    transparent 99%, gray 0);
+    background-size: 10% 100%, 100% 10%;
+    color: rgb(131, 69, 27);
+}
+
+.face{
+    width: 36%;
+    height: 55%;
+    background-color: rgb(131, 69, 27);
+    border-radius: 100% 100% / 70% 70% 120% 120%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.neck{
+    width: 15%;
+    height: 25%;
+    background-color: rgb(27, 25, 24);
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 8vmin;
+    box-shadow: inset 0 25.5vmin 0 -15vmin rgba(26, 23, 23, 0.1);
+}
+
+.mouth{
+    width: 12%;
+    height: 0.4%;
+    border: 0.25vmin solid rgba(0,0,0,2);
+    border-top-color: transparent;
+    border-radius: 100% / 100% 100% 10% 10%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(2deg);
+}
+
+.nose{
+    width: 5%;
+    height: 15%;
+    background: rgba(20,0,0,2);
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    clip-path: polygon(50% 0%, 60% 88%, 0% 85%, 55% 
+    100%, 100% 88%);
+}
+
+.ear{
+    width: 8%;
+    height: 18%;
+    border-radius: 90% 100% 70% 100% / 70% 100%;
+    background-color: rgb(131, 69, 27);
+    box-shadow: inset -9vmin 0 0 -7vmin rgba(80,
+    0,0,0.125);
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 28%;
+    left: 27%;
+}
+
+.ear_details{
+    width: 4%;
+    height: 8%;
+    border-radius: 100% 50% 0 0;
+    border: 0.25vmin solid rgba(12, 12, 12, 0.2);
+    border-left-color: black;
+    border-bottom-color: black;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+}
+
+.ear_details_right{
+    width: 4%;
+    height: 8%;
+    border-radius: 100% 50% 0 0;
+    border: 0.25vmin solid rgba(12, 12, 12, 0.2);
+    border-left-color: black;
+    border-bottom-color: black;
+    position: absolute;
+    top: 30%;
+    right: 27%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+}
+
+.ear + .ear{
+    transform: scaleX(-1) rotate(-10deg);
+    left: auto;
+    right: 27.125%;
+}
+
+.eye{
+    width: 30%;
+    height: 10%;
+    background: white;
+    border-radius: 80% 90% 30% 40% / 70% 100% 90% 100%;
+    position: absolute;
+    top: 31%;
+    right: 13%;
+    box-shadow: 0 -0.5vmin rgba(36, 32, 32, 0.2);
+    overflow: hidden;
+}
+
+.eye_left{
+    width: 30%;
+    height: 10%;
+    background: white;
+    border-radius: 80% 90% 30% 40% / 70% 100% 90% 100%;
+    position: absolute;
+    top: 31%;
+    left: 13%;
+    box-shadow: 0 -0.5vmin rgba(80,0,0,0.2);
+    overflow: hidden;
+}
+
+.pupil{
+    width: 4px;
+    height: 4px;
+    background:rgb(14, 13, 13);
+    border-radius: 100%;
+    position: absolute;
+    top: 36%;
+    left: 73%;
+    transform: translate(-50%, -35%);
+    box-shadow: 0 0 0 1.2vmin rgb(71, 62, 7);
+}
+
+.pupil_left{
+    width: 4px;
+    height: 4px;
+    background:rgb(14, 13, 13);
+    border-radius: 100%;
+    position: absolute;
+    top: 36%;
+    right: 69%;
+    transform: translate(-50%, -35%);
+    box-shadow: 0 0 0 1.2vmin rgb(71, 62, 7);
+}
+
+
+.eye-bright{
+    width: 1vmin;
+    height: 1vmin;
+    background: white;
+    border-radius: 58%;
+    position: absolute;
+    top: 32%;
+    left: 70%;
+    box-shadow: -0.5vmin 0.55vmin 0 -0.25vmin white;
+}
+
+
+.eye-bright_left{
+    width: 1vmin;
+    height: 1vmin;
+    background: white;
+    border-radius: 58%;
+    position: absolute;
+    top: 32%;
+    right: 68%;
+    box-shadow: 0.5vmin 0.55vmin 0 -0.25vmin white;
+}
+
+.cheek{
+    width: 80%;
+    height: 10%;
+    background: #f002;
+    border-radius: 20% 20% 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(1vmin);
+}
+
+.eyebrow{
+    width: 16%;
+    height: 6%;
+    color: black;
+    position: absolute;
+    top: 23%;
+    right: 34%;
+    border-radius: 80% 90% 30% 40% / 70% 100% 90% 100%;
+    box-shadow: -0.25vmin -1.5vmin 0 -0.25vmin;
+    transform: rotate(8deg);
+}
+
+.eyebrow_left{
+    width: 25%;
+    height: 7%;
+    color: black;
+    position: absolute;
+    top: 21%;
+    left: 29%;
+    border-radius: 80% 90% 30% 40% / 70% 100% 90% 100%;
+    box-shadow: -0.25vmin -1.5vmin 0 -0.25vmin;
+    transform: rotateY(120deg);
+}
+
+.hair{
+    width: 1%;
+    height: 3%;
+    border-radius: 30%;
+    background: rgb(21, 31, 34);
+    position: absolute;
+    top: 17%;
+    left: 49%;
+}
+
+.ear_ring_left{
+    width: 1%;
+    height: 5%;
+    border-radius: 30%;
+    background: rgb(143, 163, 32);
+    position: absolute;
+    top: 44%;
+    left: 32%;
+}
+
+.ear_ring_right{
+    width: 1%;
+    height: 5%;
+    border-radius: 30%;
+    background: rgb(143, 163, 32);
+    position: absolute;
+    top: 44%;
+    right: 32%;
+}
+
+.earring_ball1{
+    width: 3%;
+    height: 8%;
+    background: rgb(20, 2, 2);
+    border-radius: 100% 100% 100% 40% / 70% 100% 90% 100%;
+    position: absolute;
+    top: 48%;
+    right: 31%;
+    overflow: hidden;
+}
+
+.earring_ball2{
+    width: 3%;
+    height: 8%;
+    background: rgb(20, 2, 2);
+    border-radius: 70% 100% 90% 70%/ 70% 90% 100% 100%;
+    position: absolute;
+    top: 48%;
+    left: 31%;
+    overflow: hidden;
+}
+
+.shirt-neck{
+ width: 10%;
+ height: 8%;
+ background-color: rgb(143, 124, 20);
+ transform: skew(-10deg) rotate(15deg);
+ position: absolute;
+ top: 68%;
+ left: 37%;
+}
+
+
+.shirt-neck + .shirt-neck{
+    transform: scaleX(-1) skew(-10deg) rotate(15deg);
+    position: absolute;
+    left: auto;
+    right: 37%;
+}
+
+.background_circle{
+    width: 70%;
+    height: 80%;
+    background:rgb(194, 169, 29);
+    border-radius: 50%;
+    position: absolute;
+    top: 65;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.shoulder{
+    width: 70%;
+    height: 30%;
+    background:rgb(27, 25, 24);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    clip-path: polygon(0% 40%, 40% 10%, 40% 0%, 60% 0%,
+    60% 10%, 100% 40%, 100% 100%, 0% 100%);
+}
