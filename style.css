@@ -166,7 +166,6 @@
     box-shadow: -0.5vmin 0.55vmin 0 -0.25vmin white;
 }
 
-
 .eye-bright_left{
     width: 1vmin;
     height: 1vmin;
@@ -275,7 +274,6 @@
  top: 68%;
  left: 37%;
 }
-
 
 .shirt-neck + .shirt-neck{
     transform: scaleX(-1) skew(-10deg) rotate(15deg);
